@@ -33,9 +33,6 @@ public class HelloWord {
         } else {
             isMatriculate = "não ";
         }
-        if ("f".equals(firstWordGenere)) {
-            firstWordGenere = "F";
-        }
 
         System.out.println(
                 name + ", sua idade é de " + year
