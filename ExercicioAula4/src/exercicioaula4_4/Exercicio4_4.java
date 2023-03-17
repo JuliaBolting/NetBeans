@@ -14,16 +14,18 @@ public class Exercicio4_4 {
 
         Scanner input = new Scanner(System.in);
 
-        float valorDespesa, gorjeta, totalGorjeta, total;
+        float valorDespesa, totalGorjeta, total;
 
         System.out.println("Informe o valor de despesa:");
         valorDespesa = Float.parseFloat(input.nextLine());
 
         totalGorjeta = (valorDespesa * 10) / 100;
-        gorjeta = valorDespesa - totalGorjeta;
+        total = valorDespesa + totalGorjeta;
         
         System.out.println(
-                "CDU = " + cdu + "\nUDC = " + udc
+                "O valor da despesa foi de " + valorDespesa + 
+                        "\nO valor dos 10% de gorjeta seria " + totalGorjeta +
+                        "\nAo todo, ficou " + total
         );
 
     }
