@@ -10,37 +10,19 @@ public class Exercicio5 {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        float base, altura, area, perimetro, ladoAdjacente, ladoOposto;
-        String tipoTriangulo;
+        float base, altura, area, perimetro;
 
-        System.out.println("Digite a base do triângulo: ");
+        System.out.println("Digite a base do retângulo: ");
         base = Float.parseFloat(input.nextLine());
 
-        System.out.println("Digite a altura do triângulo: ");
+        System.out.println("Digite a altura do retângulo: ");
         altura = Float.parseFloat(input.nextLine());
 
-        System.out.println("É um triângulo equilátero? S / N");
-        tipoTriangulo = input.nextLine();
+        perimetro = 2 * base + 2 * altura;
+        area = base * altura;
 
-        if ("S".equals(tipoTriangulo)) {
-            perimetro = base * 3;
-        } else if (!"S".equals(tipoTriangulo) && !"N".equals(tipoTriangulo)) {
-            System.out.println("Não foi possível encontrar sua resposta, tente novamente!");
-            return;
-        } else {
-            System.out.println("Informe a medida do lado adjacente: ");
-            ladoAdjacente = Float.parseFloat(input.nextLine());
-
-            System.out.println("Informe a medida do lado oposto: ");
-            ladoOposto = Float.parseFloat(input.nextLine());
-
-            perimetro = base + ladoAdjacente + ladoOposto;
-        }
-
-        area = ((base * altura) / 2);
-        
         System.out.println(
-                "Para um triângulo de base " + base
+                "Para um retângulo de base " + base
                 + " e altura " + altura
                 + "\nA área é de " + area
                 + "\nE o perimetro é de " + perimetro
