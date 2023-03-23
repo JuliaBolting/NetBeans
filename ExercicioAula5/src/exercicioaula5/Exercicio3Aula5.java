@@ -34,8 +34,10 @@ public class Exercicio3Aula5 {
         System.out.println("Informe o ano do vencimento: ");
         anoVencimento = Integer.parseInt(input.nextLine());
 
-        vencido = (anoVencimento <= anoAtual && mesVencimento <= mesAtual && diaVencimento < diaAtual) == true;
-
+        vencido = (anoVencimento < anoAtual) || 
+                (anoVencimento == anoAtual && mesVencimento < mesAtual) || 
+                (anoVencimento == anoAtual && mesVencimento == mesAtual && diaVencimento < diaAtual);
+        
         dataAtual = diaAtual + "/" + mesAtual + "/" + anoAtual;
         dataVencimento = diaVencimento + "/" + mesVencimento + "/" + anoVencimento;
 
