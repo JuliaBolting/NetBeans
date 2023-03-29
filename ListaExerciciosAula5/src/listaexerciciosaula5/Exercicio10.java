@@ -44,13 +44,19 @@ public class Exercicio10 {
         //sisDecolagem = Boolean.parseBoolean(input.nextLine());
         sisDecolagem = true;
         
-        podeDecolar = 
-                ((tamPista < 1.5) && (peso < 40)) ||
-                ((tamPista < 2 && tamPista > 1.5) && (peso <= 60)) || //ver pq não da 4 linha
-                ((tamPista > 2)) ||
-                ((visibilidade < 20) && (sisDecolagem == true)) ||
-                (5 < chuva) ||
-                !((passageiros > 100) && (chuva > 0));
+        //podeDecolar = 
+          //      ((tamPista < 1.5) && (peso < 40)) ||
+            //    ((tamPista < 2 && tamPista > 1.5) && (peso <= 60)) || //ver pq não da 4 linha
+              //  ((tamPista > 2)) ||
+                //((visibilidade < 20) && (sisDecolagem == true)) ||
+                //(5 < chuva) ||
+                //!((passageiros > 100) && (chuva > 0));
+                
+                podeDecolar = (peso < 40) ||
+                        (tamPista >= 1.5 && peso <= 60) ||
+                        (tamPista > 2) &&
+                        ((visibilidade >= 20) || (sisDecolagem == true)) &&
+                        (chuva == 0 || chuva <= 5 && passageiros <= 100);
         
         
                         System.out.println(
