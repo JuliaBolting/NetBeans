@@ -30,13 +30,13 @@ public class Exercicio20 {
         System.out.println(firstNum);
         System.out.println(secondNum);
         for(int i = 3; i <= quantTermos; i++){
-            System.out.println(numFib(i));
+            System.out.println(numRicc(i));
         }
     }
 
-    public static int numFib(int num) {
+    public static int numRicc(int num) {
         if(num < 2) return num;
-        else return numFib(num - 1) + numFib(num - 2);
+        else return numRicc(num - 1) + numRicc(num - 2);
     }
     
 }
