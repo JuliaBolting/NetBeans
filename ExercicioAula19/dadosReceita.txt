@@ -1,0 +1,4 @@
+Camiseta - 1875.0
+Camisa - 4176.0
+Calça Jeans - 2775.0
+Meia - 760.0

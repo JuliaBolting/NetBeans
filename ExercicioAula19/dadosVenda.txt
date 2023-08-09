@@ -1,0 +1,12 @@
+Camiseta
+50
+37.50
+Camisa
+80
+52.20
+Calça Jeans
+30
+92.50
+Meia
+50
+15.20
